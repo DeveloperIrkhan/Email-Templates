@@ -1,0 +1,245 @@
+﻿@section Styles{
+    <style>
+
+        a {
+            text-decoration: none;
+        }
+
+        .Header {
+            background-color: #0B1D0F;
+            height: 195px;
+            display: flex;
+            align-items: center;
+        }
+
+        .header-text {
+            font-family: Inter;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 36px;
+            letter-spacing: 0em;
+            text-align: left;
+        }
+
+        .logo {
+            height: 50px;
+            padding: 10px;
+        }
+
+        .button {
+            font-family: Inter;
+            font-size: 18px;
+            padding: 10px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 22px;
+            letter-spacing: 0em;
+            text-align: left;
+        }
+
+        .f-600 {
+            font-family: Inter;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: left;
+        }
+
+        .f-400 {
+            font-family: Inter;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: left;
+        }
+
+        .footerText {
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 19px;
+            letter-spacing: 0em;
+            text-align: left;
+            display: block;
+        }
+
+        .footer-small-text {
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 19px;
+            letter-spacing: 0em;
+            text-align: left;
+            display: block;
+        }
+
+        .footerDiv {
+            background-color: #D1D6D2;
+            height: 270px;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .footer-btns-div {
+            width: 60%;
+            background: #E0E3E1;
+            padding: 12px;
+            border-radius: 14px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 8px 24px;
+            text-align: center;
+        }
+
+
+        .Compliance-certified {
+            width: 100px;
+            height: 39px;
+            margin: 5px;
+            font-family: Inter;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 16px;
+            letter-spacing: -0.025em;
+            text-align: left;
+        }
+
+        .span-style {
+            background: #F0F1F0;
+            border-radius: 12px;
+            width: 100px;
+            height: 39px;
+            margin: 5px;
+            padding: 10px;
+            font-family: Inter;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 16px;
+            letter-spacing: -0.025em;
+            text-align: center;
+        }
+
+        @@media only screen and (max-width : 960px) {
+            .footerDiv {
+                background-color: #D1D6D2;
+                height: 70%;
+                width: 100%;
+                margin-top: 10px;
+            }
+
+            .footer-btns-div {
+                width: 70%;
+                height: 200px;
+                background: #E0E3E1;
+                padding: 12px;
+                border-radius: 14px;
+                display: flex;
+                flex-wrap: wrap;
+                text-align: center;
+                align-items: center;
+                padding: 8px 24px;
+                text-align: center;
+            }
+
+
+            .Compliance-certified {
+                width: 100%;
+                height: 39px;
+                margin: 5px;
+                font-family: Inter;
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 16px;
+                letter-spacing: -0.025em;
+            }
+
+            .span-style {
+                height: 52px;
+                width: 86px;
+                display: flex;
+                text-align: center;
+                align-items: center;
+                align-content: center;
+                border-radius: 12px;
+            }
+
+            .header-text {
+                font-family: Inter;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 24px;
+                letter-spacing: 0em;
+                text-align: left;
+            }
+        }
+    </style>
+
+
+}
+<div class="container">
+    <div class="Header">
+        <div>
+            <div class="row">
+                <img class="img-fluid logo mx-5" src="~/Pics/IDUX.svg" />
+            </div>
+            <div class="row">
+                <p class="text-white mx-5 header-text text-capitalize">authentication Code</p>
+            </div>
+        </div>
+    </div>
+    <div class="body p-lg-5 p-md-3 p-2 ">
+        <div>
+            @*<p class="f-600 text-capitalize">
+                authentication Code
+            </p>*@
+            <p class="f-400">
+                Access Your IDUX account using the one-time code below: <br />
+                <span class="text-uppercase font-italic"><b> 150237 </b></span>
+            </p>
+            <p class="f-400">
+                enter your verification code on IDUX Platform to complete your login, <br />
+                if you need any help accessing your account , please contact us.
+            </p>
+        </div>
+
+    </div>
+    <div class="footerDiv">
+        <div class="mt-2">
+            <h5 class="px-3 pt-lg-5 py-2 footerText">
+                IDUX is an identity verification SaaS platform that operates under high standards of regulation, security and privacy.
+            </h5>
+
+            <div class="px-3">
+                <div class="py-2">
+                    <div class="footer-btns-div col-8 d-flex">
+                        <span class="btns-fonts Compliance-certified ">Compliance certified</span>
+                        <span class="btns-fonts span-style order-1 order-sm-1">ISO 27001</span>
+                        <span class="btns-fonts span-style order-2 order-sm-2">SOC 2</span>
+                        <span class="btns-fonts span-style order-3 order-sm-3">ASAE 3150</span>
+                        <span class="btns-fonts span-style order-4 order-sm-4">SOC 3</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-2">
+                <p class="footer-small-text px-3 m-0 py-0">&#64; 2021 Data Zoo Group</p>
+                <p class="footer-small-text px-3 m-0 py-0">Privacy Policy</p>
+                <p class="footer-small-text px-3 m-0 py-0">www.idux.com.au</p>
+                <p class="footer-small-text px-3 m-0 py-0">Contact us</p>
+            </div>
+        </div>
+    </div>
+
+</div>
