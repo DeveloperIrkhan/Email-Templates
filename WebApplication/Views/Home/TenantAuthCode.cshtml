@@ -1,12 +1,25 @@
 ﻿
-<div style="max-width:976px;min-width:378px; margin:auto">
-    <div style=" background-color: #0B1D0F; height: 195px; display: flex; align-items: center;">
-        <div>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Authentication Code</title>
+</head>
+<body>
+
+    <div style="max-width:976px;min-width:378px; margin:auto">
+        <div style=" background-color: #0B1D0F; height: 195px; display: flex; align-items: center;">
             <div>
-                <img style=" height: 50px; padding: 5px; margin-left: 50px;" src="~/Pics/IDUX.png" />
-            </div>
-            <div>
-                <p style="
+                <div>
+                    <img style=" height: 50px; padding: 5px; margin-left: 50px;" src="~/Pics/IDUX.png" />
+                </div>
+                <div>
+                    <p style="
                         color:white;
                         margin-left:50px;
                         font-family: Inter;
@@ -15,45 +28,33 @@
                         font-weight: 600;
                         line-height: 36px;
                         letter-spacing: 0em;
-                        text-align: left;">Verify Your Email</p>
+                        text-align: left;">Authentication Code</p>
+                </div>
             </div>
         </div>
-    </div>
-    <div style="padding-left: 30px;">
-        <div>
-            <p style="font-family: Inter; font-size: 18px; font-style: normal; font-weight: 600; line-height: 24px; letter-spacing: 0em; text-align: left;">
-                Verify Your Email
-            </p>
-            <p style="font-family: Inter; font-size: 18px; font-style: normal; font-weight: 400; line-height: 24px; letter-spacing: 0em; text-align: left;">
-                Ready to verify your identity?
-                <br />
-                Please click on the button below to verify your email.
-            </p>
+        <div style="padding-left: 30px;">
+                @*<p style="font-family: Inter; font-size: 18px; font-style: normal; font-weight: 600; line-height: 24px; letter-spacing: 0em; text-align: left;">
+            Verify Your Email
+        </p>*@
+                <p style="font-family: Inter; font-size: 18px; font-style: normal; font-weight: 400; line-height: 24px; letter-spacing: 0em; text-align: left;">
+                    Authentication Code
+                </p>
+                <p style="font-family: Inter; font-size: 18px; font-style: normal; font-weight: 400; line-height: 24px; letter-spacing: 0em; text-align: left;">
+                    Access Your IDUX account using the one-time code below:<br />
+                    <span style="font-style:italic; letter-spacing:2px;"><b>150237</b></span>
+                </p>
+                <p style="font-family: Inter; font-size: 18px; font-style: normal; font-weight: 400; line-height: 24px; letter-spacing: 0em; text-align: left;">
+                    Enter your verification code on IDUX Platform to complete your login, <br />
+                    if you need any help accessing your account , please contact us.
+                </p>
         </div>
-        <span>
-            <button style=" border-radius: 5px; width: 187px; min-width: 146px; max-height: 50px; border: none; color: white; background: #3D854D; font-family: Inter; font-size: 18px; padding: 10px; font-style: normal; font-weight: 600; line-height: 22px; letter-spacing: 0em; align-items: center; text-align: center; margin: 5px">
-                Verify your Email
-            </button>
-        </span>
-        <div style="padding-top: 10px; padding-bottom: 10px;">
-            <p style=" font-family: Inter; font-size: 18px; font-style: normal; font-weight: 400; line-height: 24px; letter-spacing: 0em; text-align: left;">
-                Alternatively click or copy and paste this link in your browser:
-                <a style="text-decoration: none;" href="#">here goes the link.</a>
-                <br />
-                Please verify your email as soon as possible.
-            </p>
 
-            <p style="font-family: Inter; font-size: 18px; font-style: normal; font-weight: 400; line-height: 24px; letter-spacing: 0em; text-align: left;">
-                Regards,
-            </p>
-        </div>
-    </div>
-    <div style="
+        <div style="
         background-color: #D1D6D2;
         padding:20px 0px 10px 0px;"
-        margin-top: 10px;">
-        <div style="padding:20px 0px 20px 0px;">
-            <h5 style="margin:0px 50px; font-family: Inter;
+             margin-top: 10px;">
+            <div style="padding:20px 0px 20px 0px;">
+                <h5 style="margin:0px 50px; font-family: Inter;
             font-size: 16px;
             font-style: normal;
             font-weight: 600;
@@ -61,12 +62,12 @@
             letter-spacing: 0em;
             text-align: left;
             display: block;">
-                IDUX is an identity verification SaaS platform that operates under high standards of regulation, security and privacy.
-            </h5>
+                    IDUX is an identity verification SaaS platform that operates under high standards of regulation, security and privacy.
+                </h5>
 
-            <div style="padding:0px 50px;">
-                <div style="padding:20px 0px;">
-                    <div style="
+                <div style="padding:0px 50px;">
+                    <div style="padding:20px 0px;">
+                        <div style="
                             max-width: 700px;
                             min-width: 250px;
                             background: #E0E3E1;
@@ -77,8 +78,7 @@
                             padding: 8px 16px;
 
                             text-align: center;">
-                        <span 
-                              style="        
+                            <span style="
                                 background: #E0E3E1;
                                 border-radius: 12px;
                                 width: 100%;
@@ -94,7 +94,7 @@
                                 letter-spacing: -0.025em;
                                 text-align: center;
                                 text-align: center;">Compliance certified</span>
-                        <span style="
+                            <span style="
                                 background: #F0F1F0;
                                 border-radius: 12px;
                                 width: 100%;
@@ -109,7 +109,7 @@
                                 letter-spacing: -0.025em;
                                 text-align: center;
                             ">ISO 27001</span>
-                        <span style="       
+                            <span style="
                                 background: #F0F1F0;
                                 border-radius: 12px;
                                 width: 100%;
@@ -126,7 +126,7 @@
                                 display: inline-block;
                                 vertical-align: top;
                             ">SOC 2</span>
-                                <span style="
+                            <span style="
                                 background: #F0F1F0;
                                 border-radius: 12px;
                                 width: 100%;
@@ -162,17 +162,21 @@
                                 display: inline-block;
                                 vertical-align: top;
                             ">SOC 3</span>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div style="font-family: Inter; font-size: 16px; font-style: normal; font-weight: 400; line-height: 19px; letter-spacing: 0em; text-align: left; display: block;">
-                <p style="padding-left:50px; font-family: Inter; font-size: 16px; font-style: normal; font-weight: 400; line-height: 40px; letter-spacing: 0em; text-align: left; display: block;">&#64; 2021 Data Zoo Group</p>
-                <p style="padding-left:50px; font-family: Inter; font-size: 16px; font-style: normal; font-weight: 400; line-height: 5px; letter-spacing: 0em; text-align: left; display: block;">Privacy Policy</p>
-                <p style="padding-left:50px; font-family: Inter; font-size: 16px; font-style: normal; font-weight: 400; line-height: 5px; letter-spacing: 0em; text-align: left; display: block;">www.idux.com.au</p>
-                <p style="padding-left:50px; font-family: Inter; font-size: 16px; font-style: normal; font-weight: 400; line-height: 5px; letter-spacing: 0em; text-align: left; display: block;">Contact us</p>
+                <div style="font-family: Inter; font-size: 16px; font-style: normal; font-weight: 400; line-height: 19px; letter-spacing: 0em; text-align: left; display: block;">
+                    <p style="padding-left:50px; font-family: Inter; font-size: 16px; font-style: normal; font-weight: 400; line-height: 40px; letter-spacing: 0em; text-align: left; display: block;">&#64; 2021 Data Zoo Group</p>
+                    <p style="padding-left:50px; font-family: Inter; font-size: 16px; font-style: normal; font-weight: 400; line-height: 5px; letter-spacing: 0em; text-align: left; display: block;">Privacy Policy</p>
+                    <p style="padding-left:50px; font-family: Inter; font-size: 16px; font-style: normal; font-weight: 400; line-height: 5px; letter-spacing: 0em; text-align: left; display: block;">www.idux.com.au</p>
+                    <p style="padding-left:50px; font-family: Inter; font-size: 16px; font-style: normal; font-weight: 400; line-height: 5px; letter-spacing: 0em; text-align: left; display: block;">Contact us</p>
+                </div>
             </div>
         </div>
+
     </div>
 
-</div>
+
+</body>
+</html>

@@ -23,42 +23,43 @@ namespace WebApplication.Controllers
             return View();
         }
         #region Identity Owner
-        public IActionResult Verify()
+      
+        public IActionResult OwnerEmail()
         {
             return View();
         }
-        public IActionResult Success()
+        public IActionResult OwnerSuccess()
         {
             return View();
         }
-        public IActionResult Unsuccessful()
+        public IActionResult OwnerUnsuccessful()
         {
             return View();
         }
-        public IActionResult Reusingexisting()
+        public IActionResult OwnerReusingexisting()
         {
             return View();
         }
         #endregion
 
         #region Tenant Admin
-        public IActionResult authenticationCode()
+        public IActionResult TenantAuthCode()
         {
             return View();
         }
-        public IActionResult ResetPassword()
+        public IActionResult TenantResetPassword()
         {
             return View();
         }
-        public IActionResult AdminSuccessfullVerificaiton()
+        public IActionResult TenantSuccessfulVerificaiton()
         {
             return View();
         }
-        public IActionResult AdminUnsuccessfulVerification()
+        public IActionResult TenantUnsuccessfulVerification()
         {
             return View();
         }
-        public IActionResult PartialSuccessfulVerification()
+        public IActionResult TenantPartialSuccessfulVerification()
         {
             return View();
         }
